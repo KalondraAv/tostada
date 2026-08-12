@@ -1,33 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentários</title>
-    <link rel="stylesheet" href="comentarios.css">
+    <title>Gerenciar Comentários</title>
+    <link rel="stylesheet" href="Comentarios.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="logo">
-            <img src="logo.png" alt="">
-            
-        </div>
-        <nav>
-            <ul>
-                <li><a href="inicio.html">Início</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="historias.html">Histórias</a></li>
-                <li><a href="comentarios.html">Comentários</a></li>
-                <li><a href="notificacoes.html">Notificações</a></li>
-                <li><a href="sobreNos.html">Sobre Nós</a></li>
-                <li><a href="sair.html">Sair</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h2>Gerenciar Comentários</h2>
-    <p>Visualize os comentários e responda aos usuários.</p>
-    <div class="caixa">
+<!-- CLASSE PRINCIPAL -->
+    <main class="conteudo">
+        <section class="cabecalho-pagina">
+            <h1>Gerenciar Comentários</h1>
+            <p>Visualize os comentários e responda aos usuários.</p>
+        </section>
+<!-- FILTROS DE DATA E HORA -->
+        <section class="filtros">
+<!-- DATA PADRAO BR -->
+            <input type="text" class="campo-data" placeholder="dd/mm/aaaa">
+<!-- HORA -->
+            <input type="text" class="campo-hora" placeholder="hh:mm:ss">
+        </section>
+<!-- TABELA CENTRAL COM INFORMAÇÕES -->
+        <section class="tabela-container">
 
-    </div>
+            <table class="tabela-comentarios">
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Comentário</th>
+                        <th>Data</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+<!-- usuario 1 -->
+                        <td>Nome Usuario1</td>
+                        <td>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                        </td>
+                        <td>
+                            <span>dd/mm/aaaa</span>
+                            <span>hh:mm:ss</span>
+                        </td>
+                        <td>
+                            <button class="botao-acoes">•••</button>
+                        </td>
+                    </tr>
+                    <tr>
+<!-- usuario 2 -->
+                        <td>Nome Usuario2</td>
+                        <td>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                        </td>
+                        <td>
+                            <span>dd/mm/aaaa</span>
+                            <span>hh:mm:ss</span>
+                        </td>
+                        <td>
+                            <button class="botao-acoes">•••</button>
+                        </td>
+                    </tr>
+                    <tr>
+<!-- usuario 3 -->
+                        <td>Nome Usuario3</td>
+                        <td>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                        </td>
+                        <td>
+                            <span>dd/mm/aaaa</span>
+                            <span>hh:mm:ss</span>
+                        </td>
+                        <td>
+                            <button class="botao-acoes">•••</button>
+                        </td>
+                    </tr>
+                    <tr>
+<!-- usuario 4 -->
+                        <td>Nome Usuario4</td>
+                        <td>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                        </td>
+                        <td>
+                            <span>dd/mm/aaaa</span>
+                            <span>hh:mm:ss</span>
+                        </td>
+                        <td>
+                            <button class="botao-acoes">•••</button>
+                        </td>
+                    </tr>
+                    <tr>
+<!-- usuario 5 -->
+                        <td>Nome Usuario5</td>
+                        <td>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                        </td>
+                        <td>
+                            <span>dd/mm/aaaa</span>
+                            <span>hh:mm:ss</span>
+                        </td>
+                        <td>
+                            <button class="botao-acoes">•••</button>
+                        </td>
+                    </tr>
+                    <tr>
+<!-- usuario 6 -->
+                        <td>Nome Usuario6</td>
+                        <td>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                            <span>xxxxxxxxxxxxxxxx</span>
+                        </td>
+                        <td>
+                            <span>dd/mm/aaaa</span>
+                            <span>hh:mm:ss</span>
+                        </td>
+                        <td>
+                            <button class="botao-acoes">•••</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+    </main>
 </body>
 </html>
