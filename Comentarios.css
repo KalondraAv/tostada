@@ -167,9 +167,7 @@ body {
     text-align: center;
 }
 
-/* ==============================
-   LINHAS DA TABELA
-   ============================== */
+/* LINHAS DA TABELA */
 
 .tabela-comentarios tbody tr {
     height: 61px;
@@ -181,9 +179,7 @@ body {
     border-bottom: none;
 }
 
-/* ==============================
-   CÉLULAS
-   ============================== */
+/* CÉLULAS */
 
 .tabela-comentarios td {
     padding: 7px 25px;
@@ -211,19 +207,15 @@ body {
     line-height: 1.35;
 }
 
-/* ==============================
-   CENTRALIZAÇÃO DAS COLUNAS
-   DATA E AÇÕES
-   ============================== */
+/* CENTRALIZAÇÃO DAS COLUNAS
+   DATA E AÇÕES */
 
 .tabela-comentarios td:nth-child(3),
 .tabela-comentarios td:nth-child(4) {
     text-align: center;
 }
 
-/* ==============================
-   BOTÃO DE AÇÕES
-   ============================== */
+/* BOTÃO DE AÇÕES */
 
 .botao-acoes {
     border: none;
@@ -248,9 +240,7 @@ body {
     transform: scale(1.15);
 }
 
-/* ==============================
-   RESPONSIVIDADE
-   ============================== */
+/* RESPONSIVIDADE */
 
 @media (max-width: 900px) {
 
