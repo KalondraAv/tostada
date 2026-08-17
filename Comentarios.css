@@ -60,7 +60,7 @@ body {
 /* FILTROS DE DATA E HORA */
 
 .filtros {
-    width: 90%;
+    width: 80%;
 
     margin: 0 auto 32px auto;
 
@@ -98,7 +98,7 @@ body {
 /* TABELA */
 
 .tabela-container {
-    width: 90%;
+    width: 80%;
 
     margin: 0 auto;
 
