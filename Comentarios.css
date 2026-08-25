@@ -10,8 +10,7 @@ body {
     color: #000000;
 }
 
-/* CONTEÚDO PRINCIPAl */
-
+/* CONTEÚDO PRINCIPAL */
 .conteudo {
     width: 100%;
     min-height: 800px;
@@ -19,33 +18,26 @@ body {
 }
 
 /* TÍTULO */
-
 .cabecalho-pagina {
     margin-bottom: 55px;
 }
 
 .cabecalho-pagina h1 {
     position: relative;
-
     font-size: 36px;
     font-weight: 700;
-
     margin-bottom: 12px;
     padding-left: 18px;
 }
 
 /* Barra verde ao lado do título */
-
 .cabecalho-pagina h1::before {
     content: "";
-
     position: absolute;
     left: 0;
     top: 2px;
-
     width: 5px;
     height: 44px;
-
     background-color: #465722;
     border-radius: 2px;
 }
@@ -53,40 +45,29 @@ body {
 .cabecalho-pagina p {
     font-size: 23px;
     font-weight: 600;
-
     color: #000000;
 }
 
 /* FILTROS DE DATA E HORA */
-
 .filtros {
     width: 80%;
-
     margin: 0 auto 32px auto;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     gap: 80px;
-
     padding-right: 0;
 }
 
 .filtros input {
     width: 170px;
     height: 50px;
-
     border: none;
     border-radius: 8px;
-
     background-color: #FFFFFF;
-
     padding: 0 20px;
-
     font-size: 16px;
     color: #000000;
-
     box-shadow: 0 2px 5px #465722;
 }
 
@@ -96,54 +77,38 @@ body {
 }
 
 /* TABELA */
-
 .tabela-container {
     width: 80%;
-
     margin: 0 auto;
-
     background-color: #FFFFFF;
-
     border-radius: 9px;
-
     overflow: hidden;
-
     box-shadow: 0 3px 7px #465722;
 }
 
 .tabela-comentarios {
     width: 100%;
-
     border-collapse: collapse;
-
     table-layout: fixed;
-
     background-color: #FFFFFF;
 }
 
 /* CABEÇALHO DA TABELA */
-
 .tabela-comentarios thead {
     background-color: #FFFFFF;
 }
 
 .tabela-comentarios th {
     height: 55px;
-
     padding: 10px 25px;
-
     font-size: 21px;
     font-weight: 700;
-
     color: #000000;
-
     text-align: left;
-
     border-bottom: 2px solid #465722;
 }
 
 /* Largura das colunas */
-
 .tabela-comentarios th:nth-child(1) {
     width: 25%;
 }
@@ -161,17 +126,14 @@ body {
 }
 
 /* Centralizar títulos Data e Ações */
-
 .tabela-comentarios th:nth-child(3),
 .tabela-comentarios th:nth-child(4) {
     text-align: center;
 }
 
 /* LINHAS DA TABELA */
-
 .tabela-comentarios tbody tr {
     height: 61px;
-
     border-bottom: 2px solid #465722;
 }
 
@@ -180,110 +142,128 @@ body {
 }
 
 /* CÉLULAS */
-
 .tabela-comentarios td {
     padding: 7px 25px;
-
     font-size: 19px;
     font-weight: 500;
-
     color: #000000;
-
     vertical-align: middle;
 }
 
 /* Usuário */
-
 .tabela-comentarios td:first-child {
     font-weight: 600;
 }
 
 /* Comentário e Data */
-
 .tabela-comentarios td:nth-child(2) span,
 .tabela-comentarios td:nth-child(3) span {
     display: block;
-
     line-height: 1.35;
 }
 
-/* CENTRALIZAÇÃO DAS COLUNAS
-   DATA E AÇÕES */
-
+/* CENTRALIZAÇÃO DAS COLUNAS DATA E AÇÕES */
 .tabela-comentarios td:nth-child(3),
 .tabela-comentarios td:nth-child(4) {
     text-align: center;
 }
 
-/* BOTÃO DE AÇÕES */
+/* CONTAINER DAS AÇÕES */
+.acoes-container {
+    position: relative;
+    display: inline-block;
+}
 
+/* BOTÃO DOS TRÊS PONTOS */
 .botao-acoes {
     border: none;
-
     background-color: transparent;
-
     color: #000000;
-
     font-size: 25px;
     font-weight: 900;
-
     letter-spacing: 2px;
-
     cursor: pointer;
-
     padding: 5px 10px;
+    transition: transform 0.15s ease, color 0.15s ease;
 }
 
 .botao-acoes:hover {
     color: #465722;
-
     transform: scale(1.15);
 }
 
+/* MENU DE AÇÕES */
+.menu-acoes {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 150px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    padding: 6px 0;
+    z-index: 1000;
+    /* Oculto inicialmente */
+    display: none;
+}
+
+/* MOSTRAR MENU AO PASSAR O MOUSE */
+.acoes-container:hover .menu-acoes {
+    display: block;
+}
+
+/* BOTÕES DO MENU */
+.menu-acoes button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE NAS OPÇÕES */
+.menu-acoes button:hover {
+    background-color: #EAF3E6;
+    color: #465722;
+}
+
 /* RESPONSIVIDADE */
-
 @media (max-width: 900px) {
-
     .conteudo {
         padding: 35px 3% 80px;
     }
-
     .cabecalho-pagina h1 {
         font-size: 30px;
     }
-
     .cabecalho-pagina p {
         font-size: 18px;
     }
-
     .filtros {
         gap: 25px;
     }
-
     .tabela-container {
         width: 100%;
         overflow-x: auto;
     }
-
     .tabela-comentarios {
         min-width: 750px;
     }
 }
 
 @media (max-width: 600px) {
-
     .filtros {
         justify-content: flex-start;
-
         flex-wrap: wrap;
-
         gap: 15px;
     }
-
     .filtros input {
         width: 160px;
     }
-
     .cabecalho-pagina {
         margin-bottom: 35px;
     }
