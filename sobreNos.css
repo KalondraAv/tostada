@@ -1,0 +1,171 @@
+/* CONFIG GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAF3E6;
+    color: #000000;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo {
+    width: 100%;
+    min-height: 800px;
+    padding: 25px 5% 70px;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    margin-bottom: 35px;
+}
+
+/* TÍTULO */
+.cabecalho h1 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+
+/* Barra verde ao lado do título */
+.cabecalho h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 4px;
+    height: 34px;
+    background-color: #465722;
+    border-radius: 2px;
+}
+
+/* SUBTÍTULO */
+.cabecalho p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* MOTIVO DO DESENVOLVIMENTO */
+.motivo {
+    width: 68%;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+/* Título do texto */
+.motivo h2 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Texto */
+.motivo p {
+    font-size: 10px;
+    line-height: 1.45;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* EQUIPE */
+.equipe {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 3%;
+}
+
+/* INTEGRANTE */
+.integrante {
+    width: 140px;
+    text-align: center;
+}
+
+/* ÁREA DA FOTO*/
+.foto {
+    width: 78px;
+    height: 78px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background-color: #D9D9E1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ÍCONE DE PESSOA */
+.icone-pessoa {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #6F757B;
+    margin-top: -12px;
+}
+
+/* Corpo da pessoa */
+.icone-pessoa::after {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 27px;
+    width: 40px;
+    height: 24px;
+    border-radius: 20px 20px 8px 8px;
+    background-color: #6F757B;
+}
+
+/* NOME INTEGRANTES */
+.integrante p {
+    font-size: 10px;
+    line-height: 1.35;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .equipe {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .integrante {
+        width: 130px;
+    }
+
+    .motivo {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteudo {
+        padding: 25px 5% 50px;
+    }
+
+    .cabecalho h1 {
+        font-size: 26px;
+    }
+
+    .cabecalho p {
+        font-size: 15px;
+    }
+
+    .motivo {
+        width: 95%;
+    }
+
+    .equipe {
+        gap: 30px 20px;
+    }
+}
