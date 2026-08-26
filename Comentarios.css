@@ -82,7 +82,7 @@ body {
     margin: 0 auto;
     background-color: #FFFFFF;
     border-radius: 9px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 3px 7px #465722;
 }
 
