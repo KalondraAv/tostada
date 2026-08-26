@@ -1,4 +1,3 @@
-/* CONFIG GERAIS */
 * {
     margin: 0;
     padding: 0;
@@ -15,150 +14,132 @@ body {
 .conteudo {
     width: 100%;
     min-height: 800px;
-    padding: 25px 5% 70px;
-}
-
-/* CABEÇALHO */
-.cabecalho {
-    margin-bottom: 35px;
+    padding: 45px 5% 100px;
 }
 
 /* TÍTULO */
-.cabecalho h1 {
+.cabecalho-pagina {
+    margin-bottom: 60px;
+}
+
+.cabecalho-pagina h1 {
     position: relative;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
-    padding-left: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-left: 18px;
 }
 
 /* Barra verde ao lado do título */
-.cabecalho h1::before {
+.cabecalho-pagina h1::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 1px;
-    width: 4px;
-    height: 34px;
+    top: 2px;
+    width: 5px;
+    height: 44px;
     background-color: #465722;
     border-radius: 2px;
 }
 
-/* SUBTÍTULO */
-.cabecalho p {
-    font-size: 16px;
+.cabecalho-pagina p {
+    font-size: 23px;
     font-weight: 600;
     color: #000000;
 }
 
-/* MOTIVO DO DESENVOLVIMENTO */
+/* MOTIVO */
 .motivo {
-    width: 68%;
-    margin: 0 auto 45px;
+    width: 65%;
+    margin: 0 auto 120px auto;
     text-align: center;
 }
 
-/* Título do texto */
 .motivo h2 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-/* Texto */
 .motivo p {
-    font-size: 10px;
-    line-height: 1.45;
-    font-weight: 400;
-    text-align: center;
+    font-size: 13px;
+    line-height: 1.35;
+    font-weight: 500;
 }
 
 /* EQUIPE */
 .equipe {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 3%;
+    gap: 25px;
 }
 
 /* INTEGRANTE */
 .integrante {
-    width: 140px;
+    width: 150px;
     text-align: center;
 }
 
-/* ÁREA DA FOTO*/
-.foto {
-    width: 78px;
-    height: 78px;
-    margin: 0 auto 12px;
+/* FOTO */
+.foto-integrante {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px auto;
     border-radius: 50%;
-    background-color: #D9D9E1;
-    position: relative;
+    background-color: #D9DCE2;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* ÍCONE DE PESSOA */
-.icone-pessoa {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #6F757B;
-    margin-top: -12px;
+.foto-integrante img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-/* Corpo da pessoa */
-.icone-pessoa::after {
-    content: "";
-    position: absolute;
-    left: -8px;
-    top: 27px;
-    width: 40px;
-    height: 24px;
-    border-radius: 20px 20px 8px 8px;
-    background-color: #6F757B;
-}
-
-/* NOME INTEGRANTES */
+/* NOME */
 .integrante p {
-    font-size: 10px;
-    line-height: 1.35;
+    font-size: 13px;
+    line-height: 1.25;
     font-weight: 500;
-    color: #000000;
 }
 
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
-    .equipe {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 35px;
+    .conteudo {
+        padding: 35px 3% 80px;
     }
 
-    .integrante {
-        width: 130px;
+    .cabecalho-pagina h1 {
+        font-size: 30px;
+    }
+
+    .cabecalho-pagina p {
+        font-size: 18px;
     }
 
     .motivo {
-        width: 85%;
+        width: 80%;
     }
+
+    .equipe {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
 }
 
 @media (max-width: 600px) {
-    .conteudo {
-        padding: 25px 5% 50px;
-    }
-
-    .cabecalho h1 {
-        font-size: 26px;
-    }
-
-    .cabecalho p {
-        font-size: 15px;
+    .cabecalho-pagina {
+        margin-bottom: 35px;
     }
 
     .motivo {
@@ -166,6 +147,16 @@ body {
     }
 
     .equipe {
-        gap: 30px 20px;
+        gap: 25px;
     }
+
+    .integrante {
+        width: 130px;
+    }
+
+    .foto-integrante {
+        width: 95px;
+        height: 95px;
+    }
+
 }
