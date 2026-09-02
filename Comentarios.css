@@ -86,6 +86,7 @@ body {
     box-shadow: 0 3px 7px #465722;
 }
 
+/* Mantém o menu de ações acima dos demais elementos */
 .tabela-comentarios {
     width: 100%;
     border-collapse: collapse;
@@ -172,6 +173,7 @@ body {
 .acoes-container {
     position: relative;
     display: inline-block;
+    z-index: 1001;
 }
 
 /* BOTÃO DOS TRÊS PONTOS */
@@ -195,7 +197,7 @@ body {
 /* MENU DE AÇÕES */
 .menu-acoes {
     position: absolute;
-    top: 100%;
+    top: calc(100% - 1px);
     right: 0;
     min-width: 150px;
     background-color: #FFFFFF;
